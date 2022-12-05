@@ -10,7 +10,7 @@
     """,
     'author': 'Logan',
     'website': 'https://richardsonapparatus.com',
-    'category'; 'Training',
+    'category': 'Training',
     'version': '0.1',
     'depends': ['base'],
     'data': [],
