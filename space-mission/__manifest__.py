@@ -12,5 +12,6 @@
     'version': '0.1',
     'depends': ['base'],
     'data': [],
-    'demo': []
+    'demo': [],
+    'license': 'LGPL-3'
 }
