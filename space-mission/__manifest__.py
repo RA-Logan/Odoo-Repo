@@ -11,7 +11,12 @@
     'category': 'Task Management',
     'version': '0.1',
     'depends': ['base'],
-    'data': [],
-    'demo': [],
+    'data': [
+        'security/spacemission_security.xml',
+        'security/ir.model.access.csv'
+    ],
+    'demo': [
+        'demo/spaceship_demo.xml'
+    ],
     'license': 'LGPL-3'
 }
