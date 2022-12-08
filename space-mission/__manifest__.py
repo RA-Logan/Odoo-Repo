@@ -20,5 +20,8 @@
     'demo': [
         'demo/spaceship_demo.xml'
     ],
-    'license': 'LGPL-3'
+    'license': 'LGPL-3',
+    'installable': True,
+    'application': True,
+    'auto_install': False
 }
