@@ -1,0 +1,55 @@
+<odoo>
+  <record model="ir.ui.view" id="spaceship_view_form">
+    <field name="name">spaceship.view.form</field>
+    <field name="model">spacemission.spaceship</field>
+    <field name="arch" type="xml">
+      <form string="Spaceship Form">
+        <sheet>
+          <h1><field name="name"/></h1>
+          <group>
+            <group>
+              <field name="build_status"/>
+              <field name="active"/>
+            </group>
+            <group>
+              <field name="dry_weight"/>
+              <field name="fuel_capacity"/>
+              <field name="crew_capacity"/>
+            </group>
+          </group>
+          <notebook>
+            <page string="Description">
+              <field name="description"/>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="spaceship_view_list">
+    <field name="name">spaceship.view.list</field>
+    <field name="model">spacemission.spaceship</field>
+    <field name="arch" type="xml">
+      <tree string="Spaceships" multi_edit="1">
+        <field name="name"/>
+        <field name="crew_capacity"/>
+        <field name="dry_weight"/>
+        <field name="fuel_capacity"/>
+        <field name="build_status"/>
+      </tree>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="spaceship_view_search">
+    <field name="name">spaceship.view.search</field>
+    <field name="model">spacemission.spaceship</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="name"/>
+        <field name="description"/>
+        <field name="crew_capacity"/>
+      </search>
+    </field>
+  </record>
+</odoo>
