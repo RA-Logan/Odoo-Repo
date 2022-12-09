@@ -7,14 +7,18 @@
         <sheet>
           <h1><field name="name"/></h1>
           <group>
-            <group>
+            <group string="Status Information">
               <field name="build_status"/>
               <field name="active"/>
             </group>
-            <group>
+            <group string="Ship Details">
               <field name="dry_weight"/>
               <field name="fuel_capacity"/>
               <field name="crew_capacity"/>
+              <separator string="Ship Dimensions"/>
+              <field name="height"/>
+              <field name="width"/>
+              <field name="depth"/>
             </group>
           </group>
           <notebook>
