@@ -26,11 +26,8 @@ class Spaceship(models.Model):
 
     active = fields.Boolean(string='Active', default=True)
 
-    @api.constrains("height", "width")
-<<<<<<< Updated upstream
+    @api.constrains('height', 'width')
     def _check_ship_dimens(self):
         for record in self:
             if record.width > record.height:
                 raise UserError('Width of ship cannot exceed height.')
-=======
->>>>>>> Stashed changes
