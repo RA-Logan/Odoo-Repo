@@ -24,6 +24,8 @@ class Spaceship(models.Model):
                                             ('complete', 'Complete')],
                                     copy=False)
 
+    contractor_ids = fields.Many2many(comodel_name='res.partner', string='Contractors')
+
     active = fields.Boolean(string='Active', default=True)
 
     @api.constrains('height', 'width')

@@ -25,6 +25,9 @@
             <page string="Description">
               <field name="description"/>
             </page>
+            <page string="Contractors">
+              <field name="contractor_ids"/>
+            </page>
           </notebook>
         </sheet>
       </form>
