@@ -1,4 +1,7 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-spacemission_admin,Mission Admin,model_spacemission_spaceship,group_spacemission_admin,1,1,1,1
-spacemission_crew,Mission Crew,model_spacemission_spaceship,group_spacemission_crew,1,1,1,0
-spacemission_read_all,Mission Read All,model_spacemission_spaceship,,1,0,0,0
+spacemission_admin,Spaceship Admin,model_spacemission_spaceship,group_spacemission_admin,1,1,1,1
+spacemission_crew,Spaceship Crew,model_spacemission_spaceship,group_spacemission_crew,1,1,1,0
+spacemission_read_all,Spaceship Read All,model_spacemission_spaceship,,1,0,0,0
+mission_admin,Mission Admin,model_spacemission_mission,group_spacemission_admin,1,1,1,1
+mission_crew,Mission Crew,model_spacemission_mission,group_spacemission_crew,1,1,1,0
+mission_read_all,Mission Read All,model_spacemission_mission,,1,0,0,0
