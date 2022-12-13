@@ -21,6 +21,12 @@
             <page string="Description">
               <field name="objective"/>
             </page>
+            <page string="Prerequisites">
+              <group>
+                <field name="fuel_required"/>
+                <field name="staff_size"/>
+              </group>
+            </page>
             <page string="Ship Crew">
               <field name="crew_ids"/>
             </page>
@@ -51,8 +57,8 @@
     <field name="arch" type="xml">
       <graph string="Mission Graph">
         <field name="name"/>
-        <field name="ship_fuel_capacity" type="measure"/>
-        <field name="ship_dry_weight" type="measure"/>
+        <field name="fuel_required" type="measure"/>
+        <field name="staff_size" type="measure"/>
       </graph>
     </field>
   </record>

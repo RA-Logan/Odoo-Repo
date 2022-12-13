@@ -20,7 +20,7 @@ class Mission(models.Model):
     ship_contractors = fields.Many2many(related='ship_id.contractor_ids', string='Ship Contractors')
     crew_ids = fields.Many2many(comodel_name='res.partner', string='Crew')
 
-    ship_fuel_capacity = fields.Float(related='ship_id.fuel_capacity', string='Ship Fuel Capacity')
-    ship_dry_weight = fields.Float(related='ship_id.dry_weight', string='Ship Dry Weight')
+    fuel_required = fields.Float(string='Fuel Required')
+    staff_size = fields.Integer(string='Staff Required')
 
     active = fields.Boolean(string='Active', default=True)
