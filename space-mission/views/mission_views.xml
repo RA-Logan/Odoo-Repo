@@ -50,9 +50,10 @@
     <field name="model">spacemission.mission</field>
     <field name="arch" type="xml">
       <graph string="Mission Graph">
-        <field name="ship_fuel_capacity"/>
-        <field name="ship_dry_weight"/>
-        <field name="ship_capacity"/>
+        <field name="name"/>
+        <field name="ship_fuel_capacity" type="measure"/>
+        <field name="ship_dry_weight" type="measure"/>
+        <field name="ship_capacity" type="measure"/>
       </graph>
     </field>
   </record>
