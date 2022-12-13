@@ -44,4 +44,16 @@
       </tree>
     </field>
   </record>
+
+  <record model="ir.ui.view" id="mission_view_graph">
+    <field name="name">mission.view.graph</field>
+    <field name="model">spacemission.mission</field>
+    <field name="arch" type="xml">
+      <graph string="Mission Graph">
+        <field name="ship_id.fuel_capacity"/>
+        <field name="ship_id.dry_weight"/>
+        <field name="ship_id.crew_capacity"/>
+      </graph>
+    </field>
+  </record>
 </odoo>
