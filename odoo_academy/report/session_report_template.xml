@@ -35,9 +35,9 @@
               <tbody>
                 <t t-foreach="doc.student_ids" t-as="student">
                   <tr>
-                    <td t-if="student.name" name="td_name"><span t-field="student.name"/></td>
-                    <td t-if="student.phone" name="td_phone"><span t-field="student.phone"/></td>
-                    <td t-if="student.email" name="td_email"><span t-field="student.email"/></td>
+                    <td name="td_name"><span t-if="student.name" t-field="student.name"/></td>
+                    <td name="td_phone"><span t-if="student.phone" t-field="student.phone"/></td>
+                    <td name="td_email"><span t-if="student.email" t-field="student.email"/></td>
                   </tr>
                 </t>
               </tbody>
