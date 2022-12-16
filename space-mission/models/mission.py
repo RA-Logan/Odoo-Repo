@@ -23,6 +23,6 @@ class Mission(models.Model):
     fuel_required = fields.Float(string='Fuel Required')
     staff_size = fields.Integer(string='Staff Required')
 
-    project_ids = fields.One2many(comodel_name='project.project', string='Related Projects')
+    project_ids = fields.One2many(comodel_name='project.project', string='Related Projects', inverse_name='mission_id')
 
     active = fields.Boolean(string='Active', default=True)
