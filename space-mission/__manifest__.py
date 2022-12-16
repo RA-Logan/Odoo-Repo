@@ -10,7 +10,7 @@
     'website': 'https://richardsonapparatus.com',
     'category': 'Task Management',
     'version': '0.1',
-    'depends': ['base'],
+    'depends': ['project'],
     'data': [
         'security/spacemission_security.xml',
         'security/ir.model.access.csv',
