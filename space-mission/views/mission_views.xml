@@ -33,6 +33,9 @@
             <page string="Ship Contractors">
               <field name="ship_contractors"/>
             </page>
+            <page string="Projects">
+              <field name="project_ids"/>
+            </page>
           </notebook>
         </sheet>
       </form>
